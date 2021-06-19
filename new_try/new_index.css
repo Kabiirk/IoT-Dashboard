@@ -580,7 +580,7 @@ button{
 	animation: ripple .4s ease-in;
 }
 
-@-webkit-keyframes ripple {
+@keyframes ripple {
   0% {
     opacity: 0;
   }
