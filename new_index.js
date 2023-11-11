@@ -1,20 +1,20 @@
-// var dataset = [];
-// async function getData(){
-//     var url = "https://parkingpoc.herokuapp.com/api/getinfo"
-//     var gdata = await fetch(url)
-//     const gdu = await gdata.json()
-//     console.log("Rreq data",gdu)
+var dataset = [];
+async function getData(){
+    var url = "https://parkingpoc.herokuapp.com/api/getinfo"
+    var gdata = await fetch(url)
+    const gdu = await gdata.json()
+    console.log("Rreq data",gdu)
 
-//     gdu.forEach(element => {
-//         dataset.push(element.time)
+    gdu.forEach(element => {
+        dataset.push(element.time)
         
-//     });
-//     console.log("dataset",dataset)
-//     return dataset
-// }
-// var data = getData()
+    });
+    console.log("dataset",dataset)
+    return dataset
+}
+var data = getData()
 
-// console.log("data",data)
+console.log("data",data)
 
 $(function () {
 
